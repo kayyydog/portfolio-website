@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravCore — Travel, thoughtfully</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // CUSTOMIZE HERE: Adjust your brand/accent colors to match your preferred design
+                        primary: '#1F453D',
+                        accent: '#C97852',
+                        surface: '#EFE8D9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F8F5EE] text-[#293B35] font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F5EE]/90 backdrop-blur-md border-b border-[#1F453D]/10">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- CUSTOMIZE HERE: Your Name or Logo -->
+            <a href="#" class="text-xl font-bold tracking-tight text-primary">TravCore<span class="text-accent">.</span></a>
+            
+            <nav class="hidden md:flex items-center space-x-5 lg:space-x-8 text-xs lg:text-sm font-medium text-[#52645C]">
+                <a href="#about" class="hover:text-accent transition-colors">Our promise</a>
+                <a href="#projects" class="hover:text-accent transition-colors">Who we help</a>
+                <a href="#commitments" class="hover:text-accent transition-colors">Our values</a>
+                <a href="#goals" class="hover:text-accent transition-colors">Our goals</a>
+                <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+
+            <!-- CUSTOMIZE HERE: Call to Action Button Link -->
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-accent text-white font-medium text-sm hover:bg-[#AE6240] transition-colors">
+                Plan a trip
+            </a>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative isolate min-h-[90vh] flex items-center justify-center overflow-hidden px-6 pt-20">
+        <img src="images/hero-picture.jpg" alt="" aria-hidden="true" class="absolute inset-0 -z-10 h-full w-full object-cover">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#152D28]/80 via-[#152D28]/55 to-[#152D28]/30"></div>
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- CUSTOMIZE HERE: Your role or greeting badge -->
+            <span class="inline-block px-4 py-2 rounded-full bg-white/15 text-[#F3D0A7] text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-white/25 backdrop-blur-sm">
+                Travel with confidence
+            </span>
+            <!-- CUSTOMIZE HERE: Main headline -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
+                Your next trip should feel like <span class="text-[#F3B77F]">your kind of adventure.</span>
+            </h1>
+            <!-- CUSTOMIZE HERE: Short bio summary -->
+            <p class="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-10">
+                TravCore makes it easier to plan a trip that feels comfortable, fits your budget, and brings you closer to the world.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <!-- CUSTOMIZE HERE: Projects link -->
+                <a href="#projects" class="w-full sm:w-auto px-8 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-[#AE6240] transition-colors shadow-lg shadow-black/20">
+                    See how we help
+                </a>
+                <!-- CUSTOMIZE HERE: Resume/CV link -->
+                <a href="#about" class="w-full sm:w-auto px-8 py-3 rounded-xl bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors border border-white/40">
+                    Our promise
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MISSION & VISION SECTION ==================== -->
+    <section id="about" class="py-24 px-6 border-t border-[#1F453D]/10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+                <div class="aspect-[4/5] rounded-[2rem] bg-surface border border-[#1F453D]/10 overflow-hidden relative shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=900" alt="A peaceful mountain lake framed by green hills" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div>
+                <p class="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-3">Our mission</p>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-5">Feel good about going.</h2>
+                <p class="text-[#5F6D65] leading-relaxed mb-5">
+                    We believe everyone deserves the chance to explore the world safely, comfortably, and within their budget. TravCore is here to make booking feel less overwhelming, so you can focus on the places, people, and cultures waiting to be discovered.
+                </p>
+                <h3 class="text-lg font-bold text-primary mb-2">Our vision</h3>
+                <p class="text-[#5F6D65] leading-relaxed mb-7">
+                    A more connected world, where travel builds understanding and communities can share and celebrate their cultures.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                    <div class="p-4 rounded-2xl bg-[#EFE8D9] border border-[#1F453D]/10">
+                        <span class="block font-bold text-primary mb-1">Flights</span>
+                        <span class="text-[#68766E]">Options shaped around your budget and schedule</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-[#EFE8D9] border border-[#1F453D]/10">
+                        <span class="block font-bold text-primary mb-1">Protection</span>
+                        <span class="text-[#68766E]">Help arranging travel insurance</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-[#EFE8D9] border border-[#1F453D]/10">
+                        <span class="block font-bold text-primary mb-1">Support</span>
+                        <span class="text-[#68766E]">A helping hand when plans change</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRAVELERS SECTION ==================== -->
+    <section id="projects" class="py-24 px-6 border-t border-[#1F453D]/10 bg-[#F0EBDD]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <p class="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-3">Travel is for everyone</p>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-4">Wherever you are in your journey.</h2>
+                <p class="text-[#68766E]">We bring the options together and make it easier to choose what works for you.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- PROJECT CARD 1 -->
+                <div class="rounded-[1.5rem] bg-[#FAF8F2] border border-[#1F453D]/10 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <!-- CUSTOMIZE HERE: Project Image -->
+                    <div class="h-56 overflow-hidden bg-surface">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=800" alt="Sunny coastline and turquoise water" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <!-- CUSTOMIZE HERE: Project Title & Description -->
+                        <h3 class="text-xl font-bold text-primary mb-2">First trip, big excitement</h3>
+                        <p class="text-[#68766E] text-sm leading-relaxed mb-6 flex-grow">For students, young adults, and first-time travelers: get approachable guidance and choices that help you feel prepared.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-full bg-[#EFE8D9] text-xs font-medium text-primary">Students</span>
+                            <span class="px-3 py-1 rounded-full bg-[#EFE8D9] text-xs font-medium text-primary">First-time travelers</span>
+                        </div>
+                        <!-- CUSTOMIZE HERE: Project links -->
+                        <div class="flex items-center justify-between pt-4 border-t border-[#1F453D]/10">
+                            <a href="#contact" class="text-sm font-semibold text-accent hover:text-primary transition-colors">Let's plan together <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT CARD 2 -->
+                <div class="rounded-[1.5rem] bg-[#FAF8F2] border border-[#1F453D]/10 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <!-- CUSTOMIZE HERE: Project Image -->
+                    <div class="h-56 overflow-hidden bg-surface">
+                        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=800" alt="Warm evening light over a lively city" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <!-- CUSTOMIZE HERE: Project Title & Description -->
+                        <h3 class="text-xl font-bold text-primary mb-2">A lot to do, little time</h3>
+                        <p class="text-[#68766E] text-sm leading-relaxed mb-6 flex-grow">For families, busy professionals, and frequent flyers: compare trip essentials in one place and book the options that fit.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-full bg-[#EFE8D9] text-xs font-medium text-primary">Families</span>
+                            <span class="px-3 py-1 rounded-full bg-[#EFE8D9] text-xs font-medium text-primary">Busy schedules</span>
+                        </div>
+                        <!-- CUSTOMIZE HERE: Project links -->
+                        <div class="flex items-center justify-between pt-4 border-t border-[#1F453D]/10">
+                            <a href="#contact" class="text-sm font-semibold text-accent hover:text-primary transition-colors">Let's plan together <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT CARD 3 -->
+                <div class="rounded-[1.5rem] bg-[#FAF8F2] border border-[#1F453D]/10 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <!-- CUSTOMIZE HERE: Project Image -->
+                    <div class="h-56 overflow-hidden bg-surface">
+                        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&q=80&w=800" alt="Sunlit mountain landscape and open wilderness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <!-- CUSTOMIZE HERE: Project Title & Description -->
+                        <h3 class="text-xl font-bold text-primary mb-2">Better journeys, together</h3>
+                        <p class="text-[#68766E] text-sm leading-relaxed mb-6 flex-grow">For hotels, airlines, insurers, and local transportation providers: join a network helping more people travel with confidence.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-full bg-[#EFE8D9] text-xs font-medium text-primary">Travel partners</span>
+                            <span class="px-3 py-1 rounded-full bg-[#EFE8D9] text-xs font-medium text-primary">Local communities</span>
+                        </div>
+                        <!-- CUSTOMIZE HERE: Project links -->
+                        <div class="flex items-center justify-between pt-4 border-t border-[#1F453D]/10">
+                            <a href="#contact" class="text-sm font-semibold text-accent hover:text-primary transition-colors">Partner with us <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VALUES & SERVICES SECTION ==================== -->
+    <section id="commitments" class="py-24 px-6 border-t border-[#1F453D]/10 bg-[#F0EBDD]">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-2xl mx-auto text-center mb-14">
+                <p class="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-3">The heart of TravCore</p>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-4">Three C’s. One shared world.</h2>
+                <p class="text-[#68766E]">We believe thoughtful travel should feel good for you and the communities you visit.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="p-7 sm:p-8 rounded-[1.5rem] bg-[#FAF8F2] border border-[#1F453D]/10">
+                    <span class="block text-4xl font-bold text-accent mb-5">01</span>
+                    <h3 class="text-xl font-bold text-primary mb-3">Collaboration</h3>
+                    <p class="text-sm leading-relaxed text-[#68766E]">We work with airlines, hotels, insurance providers, and private drivers to bring useful travel options together.</p>
+                </article>
+                <article class="p-7 sm:p-8 rounded-[1.5rem] bg-[#FAF8F2] border border-[#1F453D]/10">
+                    <span class="block text-4xl font-bold text-accent mb-5">02</span>
+                    <h3 class="text-xl font-bold text-primary mb-3">Compassion</h3>
+                    <p class="text-sm leading-relaxed text-[#68766E]">We listen, explain options clearly, and make room for different budgets, needs, and comfort levels.</p>
+                </article>
+                <article class="p-7 sm:p-8 rounded-[1.5rem] bg-[#FAF8F2] border border-[#1F453D]/10">
+                    <span class="block text-4xl font-bold text-accent mb-5">03</span>
+                    <h3 class="text-xl font-bold text-primary mb-3">Community</h3>
+                    <p class="text-sm leading-relaxed text-[#68766E]">We want travel to connect people across borders and celebrate the cultures and communities that make every place special.</p>
+                </article>
+            </div>
+            <div class="mt-8 rounded-[1.5rem] bg-primary p-8 sm:p-10 text-white md:flex md:items-center md:justify-between md:gap-10">
+                <div class="max-w-2xl">
+                    <p class="text-[#F3B77F] text-xs font-semibold uppercase tracking-[0.2em] mb-3">A little more peace of mind</p>
+                    <h3 class="text-2xl font-bold mb-3">Help for the details, and support when you need it.</h3>
+                    <p class="text-white/75 leading-relaxed">From flights that work with your budget and schedule to insurance options and travel arrangements, we help bring the pieces together. If the unexpected happens, our 24/7 support team is just a phone call away.</p>
+                </div>
+                <a href="#contact" class="mt-6 inline-flex shrink-0 items-center justify-center rounded-xl bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-[#AE6240] md:mt-0">Talk with TravCore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GOALS SECTION ==================== -->
+    <section id="goals" class="py-24 px-6 border-t border-[#1F453D]/10">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-2xl mx-auto text-center mb-14">
+                <p class="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-3">Growing with purpose</p>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-4">A bigger, more connected travel community.</h2>
+                <p class="text-[#68766E]">These are the milestones we’re working toward as we make confident, welcoming travel accessible to more people.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="rounded-[1.5rem] border border-[#1F453D]/10 bg-white p-8 sm:p-10">
+                    <p class="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-4">By May 2027 · Community</p>
+                    <h3 class="text-3xl font-bold text-primary mb-3">100,000</h3>
+                    <p class="text-[#5F6D65] leading-relaxed mb-6">A combined Instagram and TikTok community of 100,000, built through useful travel stories, behind-the-scenes moments, and creator collaborations.</p>
+                    <p class="text-sm font-semibold text-primary">Our plan: post at least four times a week, use paid promotions for strong-performing content, and collaborate with travel creators.</p>
+                </article>
+                <article class="rounded-[1.5rem] border border-[#1F453D]/10 bg-white p-8 sm:p-10">
+                    <p class="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-4">By 2030 · Partnerships</p>
+                    <h3 class="text-3xl font-bold text-primary mb-3">30+ travel partners</h3>
+                    <p class="text-[#5F6D65] leading-relaxed mb-6">Build relationships with at least 30 airlines, hotels, insurance providers, and transportation partners to broaden travel choices around the world.</p>
+                    <p class="text-sm font-semibold text-primary">Our plan: build relationships, be transparent with partners and travelers, and collaborate for the communities we connect.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-24 px-6 border-t border-[#1F453D]/10 bg-[#1F453D]">
+        <div class="max-w-2xl mx-auto text-center">
+            <p class="text-[#F3B77F] text-xs font-semibold uppercase tracking-[0.2em] mb-3">Travelers and future partners</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Let’s make travel feel easier.</h2>
+            <p class="text-white/75 mb-10">Planning a trip, exploring a partnership, or just curious? We’d love to hear from you.</p>
+            
+            <!-- CUSTOMIZE HERE: Form action endpoint (e.g., Formspree, Netlify Forms) -->
+            <form action="#" method="POST" class="space-y-4 text-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-medium text-white/75 mb-1">Your name</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/45 focus:outline-none focus:border-[#F3B77F] transition-colors" placeholder="Jane Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-white/75 mb-1">Your email</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/45 focus:outline-none focus:border-[#F3B77F] transition-colors" placeholder="jane@example.com">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-white/75 mb-1">How can we help?</label>
+                    <textarea rows="5" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/45 focus:outline-none focus:border-[#F3B77F] transition-colors resize-none" placeholder="Tell us about your trip or partnership idea..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-accent text-white font-semibold hover:bg-[#AE6240] transition-colors shadow-lg shadow-black/15">
+                    Send a note
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="py-8 px-6 border-t border-[#1F453D]/10 text-center text-sm text-[#68766E] bg-[#F8F5EE]">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- CUSTOMIZE HERE: Copyright text -->
+            <p>© 2026 TravCore. Find your way out there.</p>
+            <!-- CUSTOMIZE HERE: Social links -->
+            <div class="flex space-x-6">
+                <a href="#about" class="hover:text-primary transition-colors">Our promise</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Who we help</a>
+                <a href="#goals" class="hover:text-primary transition-colors">Our goals</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
